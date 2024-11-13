@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>For Loop</title>
+</head>
+<body>
+    <script>
+        for (let i = 1; i <= 5; i++) {
+            console.log(i)
+            
+        }
+
+
+        let num = [4,11,332,4553,4223,45]
+        for (let i = 0; i < num.length; i++){
+            console.log(num[i])
+        }
+
+        let sum = 0;
+        for(let i = 0; i < num.length; i++){
+            sum += num[i]
+        }
+        console.log("Sum of array elements is:" + sum)
+
+
+        let squares = []
+        let squares1 = []
+        for(let i = 0; i < num.length; i++){
+            squares[i] = num[i] * num[i]
+            squares1.push(num[i] * num[i])
+        }
+        console.log(squares)
+        console.log(squares1)
+    </script>
+</body>
+</html>
