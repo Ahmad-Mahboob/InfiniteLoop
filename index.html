@@ -3,15 +3,24 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>For Loop</title>
+    <title>Infinite Loop Example</title>
 </head>
 <body>
-    <p id="text"></p>
+    <p id="status">Starting...</p>
+
     <script>
-        let text = document.querySelector("#text")
-        for(let i = 0, i < 100;){
-            text.innerText += "Nothing";
+        // Select the paragraph element by its ID
+        const statusParagraph = document.getElementById('status');
+
+        // Start an infinite loop
+        function updateText() {
+            while (true) {
+                statusParagraph.textContent = 'Nothing';
+            }
         }
+
+        // Call the function to start the loop
+        updateText();
     </script>
 </body>
 </html>
