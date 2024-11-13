@@ -6,33 +6,12 @@
     <title>For Loop</title>
 </head>
 <body>
+    <p id="text"></p>
     <script>
-        for (let i = 1; i <= 5; i++) {
-            console.log(i)
-            
+        let text = document.querySelector("#text")
+        for(let i = 0, i < 100;){
+            text.innerText += "Nothing";
         }
-
-
-        let num = [4,11,332,4553,4223,45]
-        for (let i = 0; i < num.length; i++){
-            console.log(num[i])
-        }
-
-        let sum = 0;
-        for(let i = 0; i < num.length; i++){
-            sum += num[i]
-        }
-        console.log("Sum of array elements is:" + sum)
-
-
-        let squares = []
-        let squares1 = []
-        for(let i = 0; i < num.length; i++){
-            squares[i] = num[i] * num[i]
-            squares1.push(num[i] * num[i])
-        }
-        console.log(squares)
-        console.log(squares1)
     </script>
 </body>
 </html>
